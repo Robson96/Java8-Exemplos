@@ -24,7 +24,7 @@ public class CollectionsJava8 {
         map.put(1, "robson");
         map.put(2, "magno");
 
-        map.compute(1, (k, v) -> v + " + debora");
+        map.compute(1, (k, v) -> v + "!");
         map.forEach((k, v) -> System.out.println(k + v));
 
         map.merge(2, "!", (vOld, vNew) -> vOld + vNew);
